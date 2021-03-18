@@ -14,26 +14,26 @@
 			{ left: "$$", right: "$$", display: true},
 			{ left: "$",  right: "$",  display: false}
 		]});'></script>
-</head>
 	<style>
-		#subjects { margin: 2rem; padding: 0; }
-		#subjects a
-		{ 
-			display: block; 
-			padding: 1rem; 
-			background: lightsteelblue; 
-			margin:  1rem; 
-		}
-		#subjects a:hover 
-		{ 
-			background: bisque; 
-		}
+		h2 { counter-increment: topic; }
+		li { counter-increment: item; }
+		ul { counter-reset: item;}
+		h2::before { content: counter(topic) ". " }
+		li::before { content: counter(topic) "." counter(item) ". " }
 	</style>
+</head>
 <body>
-	<h1>Fächer</h1>
-	<div id="subjects">
-		<a href="mathematik.html">Mathematik</a>
-		<a href="todo" onclick="javascript:alert('todo'); return false">Technische Mechanik</a>
-	</div>
+	<h1>Themen</h1>
+
+	<h2>Trigonometrie</h2>
+	<ul>
+		<li><a href="content/mathe/trigonometrie/sinus.html" target="_blank">Sinus und Cosinus</a></li>
+		<li><a href="todo" onclick="javascript:alert('todo'); return false" target="_blank">Logarithmusfunktion</a></li>
+	</ul>
+	<h2>Vektorräume</h2>
+	<ul>
+		<li><a href="todo" onclick="javascript:alert('todo'); return false" target="_blank">Vektoren</a></li>
+		<li><a href="todo" onclick="javascript:alert('todo'); return false" target="_blank">Vektoroperationen</a></li>
+	</ul>	
 </body>
 </html>
