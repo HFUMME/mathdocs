@@ -1,0 +1,13 @@
+#subjects { margin: 2rem; padding: 0; }
+#subjects a
+{ 
+	display: block; 
+	font-weight: bold;
+	padding: 1rem; 
+	background: lightsteelblue; 
+	margin:  1rem; 
+}
+#subjects a:hover 
+{ 
+	background: bisque; 
+}

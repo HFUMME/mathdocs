@@ -14,7 +14,7 @@ body
 	background: white;
 	box-shadow: 0 0 5px 5px rgba(0,0,0,.05);
 }
-h1,h2,h3 
+h1,h2,h3
 {
 	margin: 0;
 	padding: 1rem 2rem;
@@ -25,7 +25,16 @@ h1
 	background: #555; 
 	color: lightgray;
 }
-p { padding: 0 2rem; text-align: justify; }
+h3 
+{ 
+	margin-top: 1rem; 
+	padding-bottom: 0; 
+}
+p 
+{ 
+	padding: 0 2rem;
+	text-align: justify; 
+}
 section { padding-bottom: 2rem; }
 ul { margin: 0; }
 li { list-style-type: none; padding: 0.3rem; }
@@ -35,6 +44,11 @@ details
 	padding: 1rem; 
 	background-color: lightsteelblue;
 	margin: 0 2rem 0 2rem;	
+}
+details p 
+{ 
+	padding-left: 0; 
+	padding-right: 0; 
 }
 summary { font-weight: bold; cursor: pointer; }
 mark

@@ -1,0 +1,5 @@
+h2 { counter-increment: topic; }
+li { counter-increment: item; }
+ul { counter-reset: item;}
+h2::before { content: counter(topic) ". " }
+li::before { content: counter(topic) "." counter(item) ". " }
