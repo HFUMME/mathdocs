@@ -1,0 +1,45 @@
+* { box-sizing: border-box;}
+html 
+{
+	height: 100%;
+	background: #eee; 
+	font-family: Roboto, sans-serif; 
+	font-weight: 400;
+}
+body 
+{ 
+	margin: 0 auto; 
+	min-height: 100vh; 
+	max-width: 800px; 
+	background: white;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,.05);
+}
+h1,h2,h3 
+{
+	margin: 0;
+	padding: 1rem 2rem;
+}
+h1
+{ 
+	margin-bottom: 1rem; 
+	background: #555; 
+	color: lightgray;
+}
+p { padding: 0 2rem; text-align: justify; }
+section { padding-bottom: 2rem; }
+ul { margin: 0; }
+li { list-style-type: none;}
+details
+{
+	padding: 1rem; 
+	background-color: lightsteelblue;
+	margin: 0 2rem 0 2rem;	
+}
+summary { font-weight: bold; cursor: pointer; }
+mark
+{
+	display: block;
+	padding: 1rem;
+	margin: 0 2rem 0 2rem;
+	background: bisque;
+}
