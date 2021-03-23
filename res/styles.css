@@ -50,7 +50,35 @@ details p
 	padding-left: 0; 
 	padding-right: 0; 
 }
-summary { font-weight: bold; cursor: pointer; }
+details > details
+{
+	margin: 0;
+	padding: .2rem 0;
+}
+figure > img
+{
+	display: block;
+	margin:auto;
+}
+figcaption
+{
+	margin-top: 10px;
+	text-align:center;
+}
+/*
+details[open]
+{
+	
+	background-color: darkseagreen;
+	transition: background-color 250ms linear;
+}
+*/
+summary
+{ 
+	font-weight: bold; 
+	cursor: pointer;
+	outline: 0;
+}
 mark
 {
 	display: block;
